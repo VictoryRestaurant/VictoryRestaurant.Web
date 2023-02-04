@@ -27,6 +27,8 @@ void RegisterServices(IServiceCollection services)
     });
 
     services.AddCache();
+
+    services.AddLoggingConfiguration(builder.Host);
 }
 
 void Configure(WebApplication app, IHostEnvironment env)
