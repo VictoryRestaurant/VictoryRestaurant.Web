@@ -1,30 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using VictoryRestaurant.Web.Presentation.Models;
+﻿namespace VictoryRestaurant.Web.Presentation.Controllers;
 
-namespace VictoryRestaurant.Web.Presentation.Controllers;
-public class HomeController : Controller
+[Route(template: "/")]
+[Route(template: "Home")]
+public sealed class HomeController : Controller
 {
-	private readonly ILogger<HomeController> _logger;
-
-	public HomeController(ILogger<HomeController> logger)
-	{
-		_logger = logger;
-	}
-
-	public IActionResult Index()
-	{
-		return View();
-	}
-
-	public IActionResult Privacy()
-	{
-		return View();
-	}
-
-	[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-	public IActionResult Error()
-	{
-		return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-	}
+	[ResponseCache(CacheProfileName = "Caching")]
+	[HttpGet(template: "")]
+	public IActionResult Index() => View(viewName: "Index");
 }
