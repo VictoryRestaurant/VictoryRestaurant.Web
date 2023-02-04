@@ -4,6 +4,8 @@ public sealed class CookDeleciousBannerViewComponent : ViewComponent
 {
 	public IViewComponentResult Invoke()
 	{
-		return View();
+        ViewBag.Phone = "Phone";
+
+        return View();
 	}
 }
