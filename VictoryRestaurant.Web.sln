@@ -5,6 +5,16 @@ VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictoryRestaurant.Web.Presentation", "VictoryRestaurant.Web.Presentation\VictoryRestaurant.Web.Presentation.csproj", "{A8B699D1-787B-4A06-A098-D21FB951D732}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{64E65FB7-6090-470B-8A46-511CF0664F0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{80346482-492B-4136-8190-BDA9E06A0922}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{FA965B11-E721-4A84-8483-3A593A90396E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{F78C87AC-B977-4F35-9CE4-463CABB45689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VictoryRestaurant.Web.Domain", "VictoryRestaurant.Web.Domain\VictoryRestaurant.Web.Domain.csproj", "{649398F2-F3F5-4EA9-8D07-AC3BD67B55DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +25,17 @@ Global
 		{A8B699D1-787B-4A06-A098-D21FB951D732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B699D1-787B-4A06-A098-D21FB951D732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8B699D1-787B-4A06-A098-D21FB951D732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649398F2-F3F5-4EA9-8D07-AC3BD67B55DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649398F2-F3F5-4EA9-8D07-AC3BD67B55DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649398F2-F3F5-4EA9-8D07-AC3BD67B55DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649398F2-F3F5-4EA9-8D07-AC3BD67B55DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8B699D1-787B-4A06-A098-D21FB951D732} = {64E65FB7-6090-470B-8A46-511CF0664F0C}
+		{649398F2-F3F5-4EA9-8D07-AC3BD67B55DE} = {FA965B11-E721-4A84-8483-3A593A90396E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2E26F64-668E-48C8-895D-02FEFB3F0538}
