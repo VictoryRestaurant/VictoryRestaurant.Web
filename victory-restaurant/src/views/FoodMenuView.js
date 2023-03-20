@@ -6,7 +6,7 @@ function FoodMenuView() {
     return (
         <>
         
-        <HeaderMenuComponent/>
+        <HeaderMenuComponent />
 
         <FooterComponent/>
 

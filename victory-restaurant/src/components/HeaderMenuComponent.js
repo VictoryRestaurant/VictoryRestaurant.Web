@@ -8,6 +8,10 @@ const menuButtonOnClick = () =>{
     window.location.href = '/Foods';
 }
 
+const contactButtonOnClick = () => {
+    window.location.href = '/Contact';
+}
+
 function HeaderMenuComponent() {
     return (
         <div class="header">
@@ -39,7 +43,7 @@ function HeaderMenuComponent() {
                                 <a onClick={menuButtonOnClick}>Menu</a>
                             </li>
                             <li>
-                                <a>Contact Us</a>
+                                <a onClick={contactButtonOnClick}>Contact Us</a>
                             </li>
                         </ul>
 
